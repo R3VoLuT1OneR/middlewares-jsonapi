@@ -1,0 +1,33 @@
+{
+    "name": "r3volut1oner/middlewares-jsonapi",
+    "description": "PSR-15 Middlewares for implementing JSON:API",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Pavel Z",
+            "email": "r3volut1oner@gmail.com"
+        }
+    ],
+    "scripts": {
+        "test": "./vendor/bin/pest"
+    },
+    "require": {
+        "php": "^7.4",
+        "psr/http-server-middleware": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Middlewares\\JSONAPI\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Middlewares\\JSONAPI\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "pestphp/pest": "^0.3.8",
+        "middlewares/utils": "^3.1",
+        "sunrise/http-server-request": "^1.0"
+    }
+}
